@@ -16,7 +16,7 @@ import BusinessOwnerDashboard from "./pages/BusinessOwnerDashboard";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import NotFound from "./pages/NotFound";
-
+//good
 const queryClient = new QueryClient();
 
 const App = () => {
@@ -40,7 +40,10 @@ const App = () => {
             <Toaster />
             <Sonner />
             <BrowserRouter>
-              <Navbar studentMode={studentMode} onStudentModeChange={setStudentMode} />
+              <Navbar
+                studentMode={studentMode}
+                onStudentModeChange={setStudentMode}
+              />
               <Routes>
                 {/* Public routes */}
                 <Route path="/" element={<Index />} />
